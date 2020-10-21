@@ -39,6 +39,12 @@ cd storage/internal
 mkdir htrack
 cd htrack
 mkdir mapTiles
+cd mapTiles
+mkdir ALL
+cd ALL
+mkdir OSM
+cd ..
+cd ..
 cd ..
 cd ..
 cd ..
@@ -120,7 +126,30 @@ function OnStart()
     + Press the back button until you are in the main DroidScript page.  
     + Long-press the htrack application you just created.  
     + Select Add Shortcut to Home Screen.
-  
+
+## E. Other dependencies  
+HTrack works on the locations and areas of interest of the user.  
++ A preload file (.csv) with this information is needed. The preload file should contain the geolocations of the areas of interest and the following variables:  
+    + CLUSTER (initials for the areas of interest)  
+    + HHID (a label for the structures of interest)  
+    + LAT (latitude of structure of interest)  
+    + LONG (longitude of structure of interest)  
+**We provide a sample preload file to be able to set up and test HTrack. The user will need to customize the app and preload file as needed.**  
++ When using the application offline, maptiles will need to be generated. We recommend the use of Open Street Map maptiles, which can be obtained through the ```RgoogleMaps``` R package. These are licensed under the Open Data Commons Open Database License (ODbL) by the Open Street Map Foundation (OSMF). All map tiles downloaded include the credit “© OpenStreetMap contributors” upon download. We have also added the following line “Base map and data from OpenStreetMap and OpenStreetMap Foundation; https://www.openstreetmap.org/copyright; all OSM documentation is licensed under the Creative Commons Attribution-ShareAlike 2.0 license (CC BY-SA 2.0). 
+    + The following code was used to generate map tiles for HTrack:  
+    ```  
+    library(RgoogleMaps)
+    latidude = <enter latitude>
+    longitude = <enter longitude>
+    for (zoom in 15:20)  
+    GetMapTiles(c(latitude, longitude), 
+                zoom = zoom, nTiles = round(c(18, 18) / (21 - zoom)),
+                tileDir = "your/path/")
+    ```  
+    + These maptiles are later saved in the device under the following device folder:  
+    ```Android > data > tech.ula > files > storage > htrack > mapTiles > ALL > OSM``` 
+
+
 # II. Starting HTrack  
 1. To start HTrack, open UserLand and log in.
 2. Type the one-word command: htrack  
