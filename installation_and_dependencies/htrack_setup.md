@@ -98,7 +98,7 @@ nano htrack.sh
 <within the editor, type the following>  
 ```
 #!/bin/bash
-R –e “shiny::runApp(‘/storage/internal/app.R’. port = 7394)”
+R –e “shiny::runApp(‘/storage/internal/app.R’, port = 7394)”
 ```
 9.	press Ctrl X, type: y, press Enter
 10. Quit UserLand. There should not be any sessions open when quitting UserLand; check by looking into the notifications area of the tablet.
@@ -135,7 +135,7 @@ HTrack works on the locations and areas of interest of the user.
     + LAT (latitude of structure of interest)  
     + LONG (longitude of structure of interest)  
 **We provide a sample preload file to be able to set up and test HTrack. The user will need to customize the app and preload file as needed.**  
-+ When using the application offline, maptiles will need to be generated. We recommend the use of Open Street Map maptiles, which can be obtained through the ```RgoogleMaps``` R package. These are licensed under the Open Data Commons Open Database License (ODbL) by the Open Street Map Foundation (OSMF). All map tiles downloaded include the credit “© OpenStreetMap contributors” upon download. We have also added the following line “Base map and data from OpenStreetMap and OpenStreetMap Foundation; https://www.openstreetmap.org/copyright; all OSM documentation is licensed under the Creative Commons Attribution-ShareAlike 2.0 license (CC BY-SA 2.0). 
++ When using the application offline, maptiles will need to be generated. We recommend the use of Open Street Map maptiles, which can be obtained through the ```RgoogleMaps``` R package. These are licensed under the Open Data Commons Open Database License (ODbL) by the Open Street Map Foundation [OSMF](https://www.openstreetmap.org/copyright). 
     + The following code was used to generate map tiles for HTrack:  
     ```  
     library(RgoogleMaps)
