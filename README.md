@@ -5,7 +5,7 @@ HTrack (Household Tracking) is an application built in R-Shiny for use on encryp
 + Troubleshooting is provided through the Issues within this repo as needed.  
 
 HTrack is setup and ready to use by following three main steps, as outlined below:  
-<img src="https://user-images.githubusercontent.com/7705604/96755510-cf630400-13a0-11eb-935a-e56cd1f59e25.png" alt="workflow" align="auto">
+<img src="https://user-images.githubusercontent.com/7705604/97463214-e1e7bb00-1915-11eb-97bb-3d01dd31713c.png" alt="workflow" align="auto">
 
 ## Citations  
 For citations, please refer to this manuscript <link to manuscript here, once approved>.
