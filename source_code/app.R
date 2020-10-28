@@ -1,5 +1,4 @@
 ## HTrack_v0.0.001
-## version 0.0.001 
 ## author: Dania M Rodriguez
 ## HTrack is a Shiny app built to capture field-level data securely and offline.
 
@@ -114,12 +113,12 @@ body <- dashboardBody(
                           actionButton("saveData", 
                                        label = HTML("Save <br />data"),
                                        icon = icon("save"), 
-                                       style ="color: #fff; background-color: #D55E00; border-color: #D55E00; 
+                                       style = "color: #fff; background-color: #D55E00; border-color: #D55E00; 
                                        width:45%; margin-left: 15px;"),
                           
                           actionButton("mapRefresh", 
                                        label = HTML("Update <br />map"), icon = icon("refresh"), 
-                                       style ="color: #fff; background-color: #D55E00; border-color: #D55E00; 
+                                       style = "color: #fff; background-color: #D55E00; border-color: #D55E00; 
                                        width:45%; margin-left: 5px; float: left;")
                           
                           )
@@ -352,19 +351,19 @@ server <- shinyServer(
       df$vcol <- ifelse(df$FU_DATE < as.character(Sys.Date()) &                         
                         df$FU_DATE != "", "#ff0318", "#000000")
       
-      ############################################################
-      #### To use offlnie map tiles, use the code in line 360 ####
-      ############################################################
+      ##################################################################
+      #### To use offline map tiles, uncomment the code in line 358 ####
+      ##################################################################
 
       # addResourcePath("mytiles", "/storage/internal/htrack/mapTiles/ALL/OSM")
                     
       ## Produce leaflet map
       map <- leaflet(df) %>%
         addTiles() %>%
-      ##########################################################
-      #### To use offlnie map tiles, use the following code ####
-      #### and comment out line 369                         #### 
-      ##########################################################
+      ################################################################
+      #### To use offline map tiles, uncomment the following code ####
+      #### and comment out line 362 above                         #### 
+      ################################################################
         # addTiles(urlTemplate = "mytiles/{z}_{x}_{y}.png") %>%
         setView(lng = mean(df$LONG), lat = mean(df$LAT), zoom = 17) %>%
         addCircleMarkers(
