@@ -1,8 +1,7 @@
-## HTrack_v0.0.111
-## version 0.0.111 
-## HTrack is a Shiny app built to run completely offline in the field. It is 
-## made so that field team members can track houses and enter data related with 
-## the status of each visit attempt, for the COPA project.
+## HTrack_v0.0.001
+## version 0.0.001 
+## author: Dania M Rodriguez
+## HTrack is a Shiny app built to capture field-level data securely and offline.
 
 library(shiny)
 library(leaflet)
