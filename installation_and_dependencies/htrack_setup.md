@@ -162,4 +162,10 @@ HTrack works on the locations and areas of interest of the user.
 1. If issues are encountered, please open an issue with the following details.  
     + Specific error message shown in the HTRack screen  
     + Specific error message stated within UserLand  
-    + A summary with details explaining what was being done right before the error appeared
+    + A summary with details explaining what was being done right before the error appeared  
+    
+# IV. General folder structure  
+Overall, HTrack uses the same folder structure whether running the app online or offline (see image below).  A main ```htrack``` folder will house the **app.R** file, the **.csv preload**, and two other folders (```htrack_archive``` and ```mapTiles```). If using/testing the app with offline maptiles, these can be saved within ```mapTiles > ALL > OSM``` (this folder structure is created in UserLAnd as explained above).  
+  
+### HTrack folder structure  
+<img src="https://user-images.githubusercontent.com/7705604/98297435-c53d2a00-1f8a-11eb-9aab-0c4ea60b7715.png" alt="workflow" width="300" height="400" align="auto">  
