@@ -74,7 +74,7 @@ install.packages(“http://cran.r-project.org/src/contrib/Archive/shiny/shiny_1.
 ```
 <wait for this installation to complete, then install the following:>  
 ```
-install.packages(c(“shinydashboard”, “crosstalk”, “leaflet”, “leaflet.extras”, “DT”, “magrittr”, “rgdal”, “sp))
+install.packages(c(“shinydashboard”, “crosstalk”, “leaflet”, “leaflet.extras”, “DT”, “magrittr”, “rgdal”, “sp”))
 q()
 ```
 6.	Two shell scripts need to be created. Still in UserLand, enter the following commands:  
