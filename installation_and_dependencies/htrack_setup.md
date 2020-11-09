@@ -99,7 +99,7 @@ nano htrack.sh
 <within the editor, type the following>  
 ```
 #!/bin/bash
-R –e “shiny::runApp(‘/storage/internal/app.R’, port = 7394)”
+R –e “shiny::runApp(‘/storage/internal/htrack/app.R’, port = 7394)”
 ```
 9.	press Ctrl X, type: y, press Enter
 10. Quit UserLand. There should not be any sessions open when quitting UserLand; check by looking into the notifications area of the tablet.
