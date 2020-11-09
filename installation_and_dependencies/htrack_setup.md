@@ -35,9 +35,10 @@ Currently, the following apps are required to be able to run HTrack on an Androi
 ```
 cd ..
 cd ..
-cd storage/internal
+cd storage/internal  
 mkdir htrack
 cd htrack
+mkdir htrack_archive
 mkdir mapTiles
 cd mapTiles
 mkdir ALL
