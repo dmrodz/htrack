@@ -82,7 +82,7 @@ q()
 ```  
 cd ..
 cd ..
-cd storage/internal/htrack
+cd storage/internal
 nano start_serv.sh
 ```  
 <within the editor, enter>
