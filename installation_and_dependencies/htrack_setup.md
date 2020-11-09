@@ -49,7 +49,7 @@ cd ..
 cd ..
 cd ..
 ```  
-2. Restart UserLand; proceed to next section.  
+2. STAY in this directory and proceed to next section.  
 
 ## C. Create one-word command and required shells for HTrack  
 1. Create a one-word command for HTrack to launch. We are using the word "htrack" as the one-word command.
@@ -66,7 +66,7 @@ function htrack {
 }
 ```
 3. Press Ctrl X, type: y, press Enter.
-4. Restart UserLand (re-enter your login and password).
+4. **Restart UserLand (re-enter your login and password)**.
 5. Load R by typing ```R``` within UserLand. This will start R within UserLand's linux distribution.  
 6. Install libraries needed for HTrack by entering the following commands, then quit R:  
 ```  
@@ -158,13 +158,23 @@ HTrack works on the locations and areas of interest of the user.
 4. Press the HTrack icon that you created with DroidScript.  
     + HTrack will load in the default internet browser that is set up in the tablet. We recommend that Chrome is set as the default internet browser for the tablet.  
     
-# III. Troubleshooting HTrack  
+
+# III. Saving data  
+1. To save data, a house marker must be activated in the navigation map.  
+    + House markers are activated by pressing on the respective dot on the map.  
+    + Once pressed, a small label indicated the structure ID will appear; this indicates that the marker is activated.  
+    + The user can also select the structure ID using the data table below the navigation map.  
+        + Selecting a home through the table rows will isolate the map house marker. THe user can then press that house marker to activate it.  
+2. Once a house marker is activated, the user can enter data in the required fields.  
+
+    
+# IV. Troubleshooting HTrack  
 1. If issues are encountered, please open an issue with the following details.  
     + Specific error message shown in the HTRack screen  
     + Specific error message stated within UserLand  
     + A summary with details explaining what was being done right before the error appeared  
     
-# IV. General folder structure  
+# V. General folder structure  
 Overall, HTrack uses the same folder structure whether running the app online or offline (see image below).  A main ```htrack``` folder will house the **app.R** file, the **.csv preload**, and two other folders (```htrack_archive``` and ```mapTiles```). If using/testing the app with offline maptiles, these can be saved within ```mapTiles > ALL > OSM``` (this folder structure is created in UserLAnd as explained above).  
   
 ### NOTE: The source code is set to run online without the map tiles. Follow instructions within the source code to un-comment the lines that will enable using downloaded map tiles.
