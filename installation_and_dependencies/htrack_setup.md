@@ -21,7 +21,7 @@ Currently, the following apps are required to be able to run HTrack on an Androi
   sudo apt-get install apt-utils debconf   
   sudo apt-get install nano dialog whiptail python curl links2   
   sudo apt-get install libcurl4-gnutls-dev libgdal20 libgdal-dev libssl-dev libproj-dev  
-  sudo apt-get install libgeos-dev r-cran-processx r-cran-pkgbuild r-cran-pkgload   
+  sudo apt-get install libgeos-dev libgeos++-dev r-cran-processx r-cran-pkgbuild r-cran-pkgload   
   sudo apt-get install r-cran-httr r-cran-callr r-cran-devtools r-cran-xopen   
   sudo apt-get install r-cran-rcpp r-cran-reshape2 r-cran-rcurl r-cran-roxygen2  
   sudo apt-get install r-cran-httpuv  
