@@ -152,11 +152,13 @@ HTrack works on the locations and areas of interest of the user.
 
 
 # II. Starting HTrack  
-1. To start HTrack, open UserLand and log in.
-2. Type the one-word command: htrack  
+1. The source code of the app, ```app.R``` needs to be imported into the main ```htrack``` folder within the tablet (see folder structure below).  
+2. The main preload should also be imported into the main ```htrack``` folder within the tablet (see folder structure below).  
+3. To start HTrack, open UserLand and log in.
+4. Type the one-word command: htrack  
     + Several messages will appear while HTrack starts. The very last line will say ```Listening on http://127.0.0.1:7394...```. Once that line appears, proceed to next step.
-3. Go to the tablet’s home screen
-4. Press the HTrack icon that you created with DroidScript.  
+5. Go to the tablet’s home screen
+6. Press the HTrack icon that you created with DroidScript.  
     + HTrack will load in the default internet browser that is set up in the tablet. We recommend that Chrome is set as the default internet browser for the tablet.  
     
 
