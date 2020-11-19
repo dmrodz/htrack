@@ -153,7 +153,7 @@ HTrack works on the locations and areas of interest of the user.
 
 # II. Starting HTrack  
 1. The source code of the app, ```app.R```, and .csv preload need to be imported into the main ```htrack``` folder within the tablet (see folder structure below).  
-    + Folder location: ```Android > data > tech.ula > files > storage > htrack > mapTiles > ALL > OSM```    
+    + Folder location: ```Android > data > tech.ula > files > storage > htrack```    
 3. To start HTrack, open UserLand and log in.
 4. Type the one-word command: htrack  
     + Several messages will appear while HTrack starts. The very last line will say ```Listening on http://127.0.0.1:7394...```. Once that line appears, proceed to next step.
